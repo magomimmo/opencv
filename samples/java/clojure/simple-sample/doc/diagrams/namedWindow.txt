@@ -1,0 +1,5 @@
+title Creates a Window
+
+participant REPL as repl
+participant Highgui as hgui
+

@@ -1,6 +1,15 @@
-(ns simple-sample.core)
+(ns simple-sample.core
+  (:import [org.opencv.core Mat MatOfByte CvType Size]
+           org.opencv.highgui.Highgui
+           org.opencv.imgproc.Imgproc)
+  (:require [seesaw.core :as ssc]
+            [clojure.java.io :as io]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+
+(defn read-image 
+  
+  [filepath]
+  (Highgui/imread filepath))
+
+
+
